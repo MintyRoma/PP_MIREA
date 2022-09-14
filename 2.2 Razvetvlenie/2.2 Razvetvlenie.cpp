@@ -11,7 +11,7 @@ int main()
 	std::cout << "Введите A: ";
 	std::cin >> a;
 
-	double absX = std::abs(x);
+	double absX = std::fabs(x);
 	if (absX < 1)
 	{
 		double res = a * std::log(absX);
