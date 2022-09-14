@@ -24,6 +24,10 @@ int main()
 		std::cout << "Радиус верха не может быть больше чем низа";
 		return 0;
 	}
+	if (r < 0 || R < 0 || h < 0)
+	{
+		std::cout << "Значения не могут быть меньше 0";
+	}
 
 	double l = std::sqrt((r*r)+(h*h));
 
@@ -32,5 +36,5 @@ int main()
 
 	std::cout << "Образующая l: " << l << std::endl;
 	std::cout << "Объем конуса: " << Objem<<std::endl;
-	std::cout << "Полная площадь поверхности: " << FullPoverhnost;
+	std::cout << "Площадь полной поверхности: " << FullPoverhnost;
 }
