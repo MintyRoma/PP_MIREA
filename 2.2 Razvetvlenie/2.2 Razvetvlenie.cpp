@@ -14,6 +14,11 @@ int main()
 	double absX = std::fabs(x);
 	if (absX < 1)
 	{
+		if (absX == 0)
+		{
+			std::cout << "Ошибка: Логарифм 0!";
+			return 0;
+		}
 		double res = a * std::log(absX);
 		std::cout << "Результат: " << res;
 	}
@@ -26,7 +31,7 @@ int main()
 		}
 		else
 		{
-			std::cout << "Невозможное выражение";
+			std::cout << "Ошибка: Корень меньше или равен 0";
 		}
 	}
 }
