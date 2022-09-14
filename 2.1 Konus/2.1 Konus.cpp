@@ -19,6 +19,12 @@ int main()
 	std::cout << "Введите высоту: ";
 	std::cin >> h;
 
+	if (r > R)
+	{
+		std::cout << "Радиус верха не может быть больше чем низа";
+		return 0;
+	}
+
 	double l = std::sqrt((r*r)+(h*h));
 
 	double Objem = (double)1/3 * M_PI * h * (std::pow(R, 2) + R * r + std::pow(r, 2));
