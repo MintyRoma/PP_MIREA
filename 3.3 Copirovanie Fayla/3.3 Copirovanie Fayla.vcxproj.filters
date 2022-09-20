@@ -15,11 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3.1 File.cpp">
+    <ClCompile Include="3.3 Copirovanie Fayla.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="task.txt" />
+    <Text Include="Test.txt" />
   </ItemGroup>
 </Project>
