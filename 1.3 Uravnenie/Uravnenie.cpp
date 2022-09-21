@@ -2,15 +2,17 @@
 
 int main()
 {
+	setlocale(0, "");
 	double b = 1;
 	double c = 1;
 
 	std::cin >> b >> c;
 	if (b == 0)
 	{
-		std::cout << "Деление на 0!";
+		if (c == 0) std::cout << "Х = any";
+		else std::cout << "Нет корней";
 		return 0;
 	}
-	double x = (c * -1) / b;
+	double x = -c / b;
 	std::cout << x;
 }

@@ -24,9 +24,9 @@ int main()
 		std::cout << "Значения не могут быть меньше 0";
 	}
 
-	double l = std::sqrt((r*r)+(h*h));
+	double l = std::sqrt(std::pow(R-r,2)+std::pow(h,2)); // ????? - completed
 
-	double Objem = (double)1/3 * M_PI * h * (std::pow(R, 2) + R * r + std::pow(r, 2));
+	double Objem = 1.0/3 * M_PI * h * (std::pow(R, 2) + R * r + std::pow(r, 2));
 	double FullPoverhnost = M_PI * (std::pow(R, 2) + ((R + r) * l) + std::pow(r, 2));
 
 	std::cout << "Образующая l: " << l << std::endl;

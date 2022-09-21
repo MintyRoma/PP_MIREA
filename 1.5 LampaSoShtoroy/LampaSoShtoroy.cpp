@@ -24,6 +24,6 @@ int main()
 		std::cin >> weather;
 	} while (weather != 0 && weather != 1);
 
-	if ((weather==1 && window==0) || lamp==1) std::cout << "В комнате светло";
+	if ((weather && window) || lamp) std::cout << "В комнате светло";
 	else std::cout << "В комнате темно :(";
 }

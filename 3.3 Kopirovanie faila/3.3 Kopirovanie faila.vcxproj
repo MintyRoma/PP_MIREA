@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0ce12d29-bac7-4d23-89f7-df10dd253f15}</ProjectGuid>
-    <RootNamespace>My33CopirovanieFayla</RootNamespace>
+    <ProjectGuid>{e890af14-03a2-4329-ac08-e6e4a5baf671}</ProjectGuid>
+    <RootNamespace>My33Kopirovaniefaila</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="3.3 Copirovanie Fayla.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Test.txt" />
+    <ClCompile Include="3.3 Kopirovanie faila.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
