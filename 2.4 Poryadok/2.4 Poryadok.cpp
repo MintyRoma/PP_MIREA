@@ -11,6 +11,7 @@ int main()
 	if (start <= 0)
 	{
 		std::cout << "Начальное число не является натуральным";
+		return 0;
 	}
 	for (int i = start; i < start + 10; i++)
 	{
