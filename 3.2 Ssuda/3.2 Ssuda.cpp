@@ -1,10 +1,12 @@
 ﻿#include <iostream>
+#include <iomanip>
+#define precision 15
 
 int main()
 {
 	setlocale(0, "");
 
-	double percent, sum, years, monthpay;
+	double sum, years, monthpay;
 	
 	std::cout << "Введите сумму заема: ";
 	std::cin >> sum;
@@ -15,12 +17,27 @@ int main()
 	std::cout << "Введите месяную выплату: ";
 	std::cin >> monthpay;
 
-	//АХТУНГ
-	//НИЖЕ ПРЕДСТАВЛЕН САМЫЙ БЛЕВОТНЫЙ МЕТОД РАССЧЕТА!!!
-	percent = 0.00001;
-	while ((sum * percent / 100 * pow((1 + percent / 100), years)) / (12 * (pow((1 + percent / 100), years) - 1)) < monthpay)
+	int counted_precision = 0;
+
+	double percent = 0;
+	double scale = 10;
+
+	while (counted_precision < precision)
 	{
-		percent += 0.00001;
+		percent += scale;
+		double r = percent / 100;
+		double calculated_pay = (sum*r*std::pow(1+r,years)) / (12*(std::pow(1+r,years)-1));
+		
+		std::cout << "Percent="<<percent <<"  MonthPay="<<calculated_pay << std::endl;
+		
+		if (monthpay < calculated_pay)
+		{
+			counted_precision++;
+			percent -= scale;
+			scale /= 10;
+		}
+		if (monthpay == calculated_pay) break;
 	}
-	std::cout << "Процентная ставка: " << percent << "%";
+	std::cout << "Процентная ставка: " <<std::setprecision(precision) << percent;
+
 }
