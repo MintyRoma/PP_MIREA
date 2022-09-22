@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <iomanip>
-#define precision 15
+#define precision 20
 
 int main()
 {
@@ -17,6 +17,12 @@ int main()
 	std::cout << "Введите месяную выплату: ";
 	std::cin >> monthpay;
 
+	if (sum <= 0 || years <= 0 || monthpay <= 0)
+	{
+		std::cout << "Error: Wrong input";
+		exit(0);
+	}
+
 	int counted_precision = 0;
 
 	double percent = 0;
@@ -28,7 +34,7 @@ int main()
 		double r = percent / 100;
 		double calculated_pay = (sum*r*std::pow(1+r,years)) / (12*(std::pow(1+r,years)-1));
 		
-		std::cout << "Percent="<<percent <<"  MonthPay="<<calculated_pay << std::endl;
+		//std::cout << "Percent="<<percent <<"  MonthPay="<<calculated_pay << std::endl;
 		
 		if (monthpay < calculated_pay)
 		{
@@ -36,8 +42,8 @@ int main()
 			percent -= scale;
 			scale /= 10;
 		}
-		if (monthpay == calculated_pay) break;
+		else if (std::round(monthpay*100) == std::round(calculated_pay*100)) break;
 	}
-	std::cout << "Процентная ставка: " <<std::setprecision(precision) << percent;
+	std::cout << "Процентная ставка: " <<std::setprecision(5) << percent;
 
 }
