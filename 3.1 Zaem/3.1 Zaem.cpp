@@ -23,6 +23,6 @@ int main()
 
 	double SomeR = Percent / 100;
 
-	double MonthPay = (Sum*SomeR*std::pow(1+SomeR,2)) / (12*(std::pow(1+SomeR,2)-1));
+	double MonthPay = (Sum*SomeR*std::pow(1+SomeR,Period)) / (12*(std::pow(1+SomeR,Period)-1));
 	std::cout << "Ежемесячный платеж: " << MonthPay;
 }
