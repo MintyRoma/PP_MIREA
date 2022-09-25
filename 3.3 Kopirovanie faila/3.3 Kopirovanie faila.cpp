@@ -14,4 +14,8 @@ int main()
 			std::cout << buffer<<std::endl;
 		}
 	}
+	else
+	{
+		std::cout << "Ошибка открытия файла";
+	}
 }
