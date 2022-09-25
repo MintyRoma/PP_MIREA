@@ -4,5 +4,6 @@
 
 int main()
 {
-	setlocale();
+	setlocale(0, "");
+	std::fstream filereader;
 }
