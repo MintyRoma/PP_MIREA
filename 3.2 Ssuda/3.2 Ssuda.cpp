@@ -32,21 +32,20 @@ int main()
 	{
 		percent += scale;
 		double r = percent / 100;
-		double calculated_pay = (sum*r*std::pow(1+r,years)) / (12*(std::pow(1+r,years)-1));
-		
+		double calculated_pay = (sum * r * std::pow(1 + r, years)) / (12 * (std::pow(1 + r, years) - 1));
+
 		//DEBUG
-		/*std::cout << "Percent="<<percent <<"  MonthPay="<<calculated_pay << std::endl;
-		std::cout << "Reference:" << (int)std::round(monthpay * 1000) << "   Calculated:" << (int)std::round(calculated_pay * 1000)<<std::endl;
-		std::cout << "Precision:" << counted_precision << std::endl<<std::endl;*/
-		
+		std::cout <<std::setprecision(precision) << "Percent=" << percent << "  MonthPay=" << calculated_pay << std::endl;
+		std::cout << "Reference:" << monthpay << "   Calculated:" << calculated_pay<<std::endl;
+		std::cout << "Precision:" << counted_precision << std::endl<<std::endl;
 		if (monthpay < calculated_pay)
 		{
 			counted_precision++;
 			percent -= scale;
 			scale /= 10;
 		}
-		else if ((int)std::round(monthpay*1000) == (int)std::round(calculated_pay*1000)) break;
+		if (monthpay  == calculated_pay) break;
 	}
-	std::cout << "Процентная ставка: " <<std::setprecision(5) << percent;
+	std::cout << "Процентная ставка: " <<std::fixed << std::setprecision(precision) << percent;
 
 }
