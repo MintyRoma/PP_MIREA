@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.5 Sorting", "3.5 Sorting\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.2 Znak Chisla", "4.2 Znak Chisla\4.2 Znak Chisla.vcxproj", "{C65DFE75-9B6C-41BA-90AD-01D67D51916F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.3 Geometrical Shapes", "4.3 Geometrical Shapes\4.3 Geometrical Shapes.vcxproj", "{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -203,6 +205,14 @@ Global
 		{C65DFE75-9B6C-41BA-90AD-01D67D51916F}.Release|x64.Build.0 = Release|x64
 		{C65DFE75-9B6C-41BA-90AD-01D67D51916F}.Release|x86.ActiveCfg = Release|Win32
 		{C65DFE75-9B6C-41BA-90AD-01D67D51916F}.Release|x86.Build.0 = Release|Win32
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}.Debug|x64.ActiveCfg = Debug|x64
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}.Debug|x64.Build.0 = Debug|x64
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}.Debug|x86.ActiveCfg = Debug|Win32
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}.Debug|x86.Build.0 = Debug|Win32
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}.Release|x64.ActiveCfg = Release|x64
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}.Release|x64.Build.0 = Release|x64
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}.Release|x86.ActiveCfg = Release|Win32
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -226,6 +236,7 @@ Global
 		{403EB3FD-3DAF-408D-8619-DD9806ED87FC} = {DE6D99DD-11A6-4F55-93C9-0283E1661BFE}
 		{AE3E46D3-4294-4F3A-9695-8183FEFE14F3} = {DE6D99DD-11A6-4F55-93C9-0283E1661BFE}
 		{C65DFE75-9B6C-41BA-90AD-01D67D51916F} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
+		{48CEE0C9-66D7-4AD1-A3B4-A17B09CC0629} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
