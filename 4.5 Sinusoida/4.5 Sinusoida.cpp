@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿#define _USE_MATH_DEFINES
+#include <iostream>
 #include <cmath>
 
 #define point '@'
@@ -12,7 +13,7 @@ void DrawSin(double scale);
 int main()
 {
 	//setlocale(0,"");
-	DrawSin(2.5);
+	DrawSin(4);
 }
 
 void DrawSin(double scale)
@@ -23,9 +24,9 @@ void DrawSin(double scale)
 	{
 		for (double X = startpoint; X < endpoint; X += 0.25)
 		{
-			double res = sin(X);
+			double res = std::sin(X);
 			//std::cout << res;
-			if (std::sin(Y - 0.25) < res && std::sin(Y + 0.25) > res) std::cout << point;
+			if (std::abs(res-Y)<0.1225) std::cout << point;
 			else if (X == 0 && Y == 0) std::cout << center;
 			else if (X == 0) std::cout << YO;
 			else if (Y == 0) std::cout << XO;
