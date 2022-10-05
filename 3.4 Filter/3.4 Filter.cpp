@@ -14,7 +14,11 @@ int main()
             bool cont=false;
             for (char c : buffer)
             {
-                
+                if (c == '.' && cont)
+                {
+                    std::cout << c;
+                    continue;
+                }
                 if (std::isdigit(c))
                 {
                     if (cont)
