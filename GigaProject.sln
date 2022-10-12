@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.5 Sinusoida", "4.5 Sinuso
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.6 Automatny raspoznavatel", "4.6 Automatny raspoznavatel\4.6 Automatny raspoznavatel.vcxproj", "{D05782D6-0E0E-4818-962D-AEC1B0F6F3A6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.7 PseudoRandom Number Generator", "4.7 PseudoRandom Number Generator\4.7 PseudoRandom Number Generator.vcxproj", "{059B12DC-A9A7-4709-9E5B-E90AC74C964B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -243,6 +245,14 @@ Global
 		{D05782D6-0E0E-4818-962D-AEC1B0F6F3A6}.Release|x64.Build.0 = Release|x64
 		{D05782D6-0E0E-4818-962D-AEC1B0F6F3A6}.Release|x86.ActiveCfg = Release|Win32
 		{D05782D6-0E0E-4818-962D-AEC1B0F6F3A6}.Release|x86.Build.0 = Release|Win32
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B}.Debug|x64.ActiveCfg = Debug|x64
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B}.Debug|x64.Build.0 = Debug|x64
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B}.Debug|x86.ActiveCfg = Debug|Win32
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B}.Debug|x86.Build.0 = Debug|Win32
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B}.Release|x64.ActiveCfg = Release|x64
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B}.Release|x64.Build.0 = Release|x64
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B}.Release|x86.ActiveCfg = Release|Win32
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -270,6 +280,7 @@ Global
 		{1DBD3746-EB5E-4068-951F-6EF38A01C6A0} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 		{6E7E452E-DAAD-4DCE-891A-447CC8AC29B8} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 		{D05782D6-0E0E-4818-962D-AEC1B0F6F3A6} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
+		{059B12DC-A9A7-4709-9E5B-E90AC74C964B} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
