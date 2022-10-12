@@ -2,7 +2,7 @@
 #include <string>
 #include <random>
 #include <array>
-#define amount 31
+#define amount 30
 
 std::string MergeSort(std::string arr);
 

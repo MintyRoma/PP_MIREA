@@ -2,19 +2,19 @@
 #include <fstream>
 #include <string>
 
-int DefineSymbol(int num);
+int DefineSymbol(double num);
 
 int main()
 {
 	while (true)
 	{
-		int num;
+		double num;
 		std::cin >> num;
 		std::cout << DefineSymbol(num) << std::endl;
 	}
 }
 
-int DefineSymbol(int num)
+int DefineSymbol(double num)
 {
 	if (num > 0) return 1;
 	if (num < 0)return -1;

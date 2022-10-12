@@ -13,7 +13,7 @@ int main()
 
 	for (int i = 0; i < 10; i++)
 	{
-		int info = std::rand();
+		int info = std::rand()%100 - 50;
 		file << info << std::endl;
 		std::cout << info << std::endl;
 	}

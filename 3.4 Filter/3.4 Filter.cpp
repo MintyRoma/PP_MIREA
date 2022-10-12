@@ -12,28 +12,31 @@ int main()
         while (std::getline(filereader, buffer))
         {
             bool cont=false;
+            bool dot = false;
             for (char c : buffer)
             {
                 if (c == '.' && cont)
                 {
-                    std::cout << c;
+                    dot=true;
                     continue;
                 }
                 if (std::isdigit(c))
                 {
                     if (cont)
                     {
+                        if (dot) std::cout << ".";
                         std::cout << c;
                     }
                     if (!cont)
                     {
-                        std::cout << std::endl<<c;
+                        std::cout << "  " << c;
                         cont = true;
                     }
                     
                 }
                 else
                 {
+                    dot = false;
                     cont = false;
                 }
             }
