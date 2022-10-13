@@ -63,6 +63,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.7 PseudoRandom Number Gen
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.8 Umnozhenie matric", "4.8 Umnozhenie matric\4.8 Umnozhenie matric.vcxproj", "{4D0AA36C-5C8D-4059-9DA6-9843338BFB7A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.9 Sistemy schisleniya", "4.9 Sistemy schisleniya\4.9 Sistemy schisleniya.vcxproj", "{32BDADA7-BAA5-444A-AD3E-0635B043BD88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -263,6 +265,14 @@ Global
 		{4D0AA36C-5C8D-4059-9DA6-9843338BFB7A}.Release|x64.Build.0 = Release|x64
 		{4D0AA36C-5C8D-4059-9DA6-9843338BFB7A}.Release|x86.ActiveCfg = Release|Win32
 		{4D0AA36C-5C8D-4059-9DA6-9843338BFB7A}.Release|x86.Build.0 = Release|Win32
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88}.Debug|x64.ActiveCfg = Debug|x64
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88}.Debug|x64.Build.0 = Debug|x64
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88}.Debug|x86.ActiveCfg = Debug|Win32
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88}.Debug|x86.Build.0 = Debug|Win32
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88}.Release|x64.ActiveCfg = Release|x64
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88}.Release|x64.Build.0 = Release|x64
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88}.Release|x86.ActiveCfg = Release|Win32
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -292,6 +302,7 @@ Global
 		{D05782D6-0E0E-4818-962D-AEC1B0F6F3A6} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 		{059B12DC-A9A7-4709-9E5B-E90AC74C964B} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 		{4D0AA36C-5C8D-4059-9DA6-9843338BFB7A} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
+		{32BDADA7-BAA5-444A-AD3E-0635B043BD88} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
