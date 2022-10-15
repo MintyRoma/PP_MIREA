@@ -14,6 +14,15 @@ int main()
 	std::cin >> value;
 	std::cout << "Введите конечную систему счисления: ";
 	std::cin >> endNS;
+	try
+	{
+		if (startNS > 36 || endNS > 36) throw std::exception("Начальная или конечная система счисления слишком велика!");
+		if (startNS < 2 || endNS < 2) throw std::exception("Начальная или конечная система счисления слишком маленькая!");
+	}
+	catch (std::exception Ex)
+	{
+		std::cout << "\nException: " + Ex.what();
+	}
 	int DecNumber = 0;
 	int powers = value.length() - 1;
 	for (char c: value)
