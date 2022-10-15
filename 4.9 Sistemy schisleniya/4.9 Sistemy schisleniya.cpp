@@ -21,7 +21,8 @@ int main()
 	}
 	catch (std::exception Ex)
 	{
-		std::cout << "\nException: " + Ex.what();
+		std::cout << "\nException: " << Ex.what();
+		exit(0);
 	}
 	int DecNumber = 0;
 	int powers = value.length() - 1;
