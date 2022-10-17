@@ -13,13 +13,32 @@ int main()
     {
         if (i == buffer.length() - 1)
         {
-            result += DefineNumber(buffer[i]);
+            int stack = DefineNumber(buffer[i]);
+            if (stack < result || i == 0)
+            {
+                result += stack;
+                i++;
+            }
+            else
+            {
+                std::cout << "Неверная последовательность";
+                exit(0);
+            }
             continue;
         }
         if (DefineNumber(buffer[i]) < DefineNumber(buffer[i + 1]))
         {
-            result += (DefineNumber(buffer[i + 1]) - DefineNumber(buffer[i]));
-            i++;
+            int stack = (DefineNumber(buffer[i + 1]) - DefineNumber(buffer[i]));
+            if (stack < result || i == 0)
+            {
+                result += stack;
+                i++;
+            }
+            else
+            {
+                std::cout << "Неверная последовательность";
+                exit(0);
+            }
         }
         else
         {
