@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4.9 Sistemy schisleniya", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.1 Algoritm Evklida", "5.1 Algoritm Evklida\5.1 Algoritm Evklida.vcxproj", "{E9A75A79-8E02-4920-BEDC-0AC08C2297B6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.2 Resheto Erestofena", "5.2 Resheto Erestofena\5.2 Resheto Erestofena.vcxproj", "{12E95E62-1790-433C-B4B1-01236E971C5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -283,6 +285,14 @@ Global
 		{E9A75A79-8E02-4920-BEDC-0AC08C2297B6}.Release|x64.Build.0 = Release|x64
 		{E9A75A79-8E02-4920-BEDC-0AC08C2297B6}.Release|x86.ActiveCfg = Release|Win32
 		{E9A75A79-8E02-4920-BEDC-0AC08C2297B6}.Release|x86.Build.0 = Release|Win32
+		{12E95E62-1790-433C-B4B1-01236E971C5D}.Debug|x64.ActiveCfg = Debug|x64
+		{12E95E62-1790-433C-B4B1-01236E971C5D}.Debug|x64.Build.0 = Debug|x64
+		{12E95E62-1790-433C-B4B1-01236E971C5D}.Debug|x86.ActiveCfg = Debug|Win32
+		{12E95E62-1790-433C-B4B1-01236E971C5D}.Debug|x86.Build.0 = Debug|Win32
+		{12E95E62-1790-433C-B4B1-01236E971C5D}.Release|x64.ActiveCfg = Release|x64
+		{12E95E62-1790-433C-B4B1-01236E971C5D}.Release|x64.Build.0 = Release|x64
+		{12E95E62-1790-433C-B4B1-01236E971C5D}.Release|x86.ActiveCfg = Release|Win32
+		{12E95E62-1790-433C-B4B1-01236E971C5D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -314,6 +324,7 @@ Global
 		{4D0AA36C-5C8D-4059-9DA6-9843338BFB7A} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 		{32BDADA7-BAA5-444A-AD3E-0635B043BD88} = {2FD053D8-F62C-452D-87E9-B825A4FFED33}
 		{E9A75A79-8E02-4920-BEDC-0AC08C2297B6} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
+		{12E95E62-1790-433C-B4B1-01236E971C5D} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
