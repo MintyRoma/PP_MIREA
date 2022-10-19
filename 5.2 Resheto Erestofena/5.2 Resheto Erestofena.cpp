@@ -7,7 +7,11 @@ int main()
 	int Num;
 	std::cout << "Введите конечное число: ";
 	std::cin >> Num;
-
+	if (Num < 2)
+	{
+		std::cout << "Ошибка: Число должно быть не менее 2!";
+		exit(0);
+	}
 	std::vector<int> order;
 
 	for (int i = 2; i <= Num; i++) order.push_back(i);
