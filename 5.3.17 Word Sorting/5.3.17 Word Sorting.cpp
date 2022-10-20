@@ -2,13 +2,23 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <chrono>
+
+enum CheckResult
+{
+	AisEarlier,
+	BisEarlier,
+	Same
+};
 
 std::vector<std::string> QuickSort(std::vector<std::string> data);
-int CheckWords(std::string A, std::string B);
+CheckResult CheckWords(std::string A, std::string B);
+
 
 int main()
 {
 	setlocale(0, "");
+	std::chrono::system_clock::time_point FileReadingStarted = std::chrono::system_clock::now();
 	std::ifstream reader("Task.txt");
 	std::vector<std::string> Lib;
 	if (reader.is_open())
@@ -21,9 +31,16 @@ int main()
 		std::cout << "Файл занят другим процессом";
 		exit(0);
 	}
-
+	std::chrono::duration<double> ReadingElapsed = std::chrono::system_clock::now() - FileReadingStarted;
+	
+	std::chrono::system_clock::time_point SortingStarted = std::chrono::system_clock::now();
 	Lib = QuickSort(Lib);
+	std::chrono::duration<double> SortingElapsed = std::chrono::system_clock::now() - SortingStarted;
+	
 	for (std::string s : Lib) std::cout << s << std::endl;
+	
+	std::cout << "File Reading time: " << ReadingElapsed.count()<<" secs."<<std::endl;
+	std::cout << "Sorting time elapsed: " << SortingElapsed.count()<<" secs.";
 }
 
 std::vector<std::string> QuickSort(std::vector<std::string> data)
@@ -38,8 +55,8 @@ std::vector<std::string> QuickSort(std::vector<std::string> data)
 	for (int i = 0; i < data.size(); i++)
 	{
 		if (i == milestone) continue;
-		int status = CheckWords(data[i], reference);
-		if (status == 1)
+		CheckResult status = CheckWords(data[i], reference);
+		if (status== CheckResult::BisEarlier)
 		{
 			HighPart.push_back(data[i]);
 		}
@@ -66,8 +83,8 @@ std::vector<std::string> QuickSort(std::vector<std::string> data)
 /// </summary>
 /// <param name="A">Строка A</param>
 /// <param name="B">Строка B</param>
-/// <returns>Число обозначающее результат проверка</returns>
-int CheckWords(std::string A, std::string B)
+/// <returns>Значение проверки</returns>
+CheckResult CheckWords(std::string A, std::string B)
 {
 	int minimalLength;
 	bool firstIsMin = false;
@@ -80,14 +97,14 @@ int CheckWords(std::string A, std::string B)
 	
 	for (int i = 0; i < minimalLength; i++)
 	{
-		if (A[i] < B[i]) return -1;
-		if (A[i] > B[i]) return 1;
+		if (A[i] < B[i]) return CheckResult::AisEarlier;
+		if (A[i] > B[i]) return CheckResult::BisEarlier;
 	}
 	
 	if (firstIsMin)
 	{
-		if (A.length() == B.length()) return 0;
-		return -1;
+		if (A.length() == B.length()) return CheckResult::Same;
+		return CheckResult::AisEarlier;
 	}
-	else return 1;
+	else return CheckResult::BisEarlier;
 }
