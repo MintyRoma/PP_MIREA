@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.2 Resheto Erestofena", "5
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.3.17 Word Sorting", "5.3.17 Word Sorting\5.3.17 Word Sorting.vcxproj", "{7E3F862B-553D-49CC-BD0B-90BFEF72D1EB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.3.39 Text Entries", "5.3.39 Text Entries\5.3.39 Text Entries.vcxproj", "{24D34D67-981B-4C7D-9239-5E15E0F1909C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -303,6 +305,14 @@ Global
 		{7E3F862B-553D-49CC-BD0B-90BFEF72D1EB}.Release|x64.Build.0 = Release|x64
 		{7E3F862B-553D-49CC-BD0B-90BFEF72D1EB}.Release|x86.ActiveCfg = Release|Win32
 		{7E3F862B-553D-49CC-BD0B-90BFEF72D1EB}.Release|x86.Build.0 = Release|Win32
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C}.Debug|x64.ActiveCfg = Debug|x64
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C}.Debug|x64.Build.0 = Debug|x64
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C}.Debug|x86.ActiveCfg = Debug|Win32
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C}.Debug|x86.Build.0 = Debug|Win32
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C}.Release|x64.ActiveCfg = Release|x64
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C}.Release|x64.Build.0 = Release|x64
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C}.Release|x86.ActiveCfg = Release|Win32
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -336,6 +346,7 @@ Global
 		{E9A75A79-8E02-4920-BEDC-0AC08C2297B6} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
 		{12E95E62-1790-433C-B4B1-01236E971C5D} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
 		{7E3F862B-553D-49CC-BD0B-90BFEF72D1EB} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
+		{24D34D67-981B-4C7D-9239-5E15E0F1909C} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
