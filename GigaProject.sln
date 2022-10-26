@@ -77,6 +77,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.4.18 Average height", "5.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.4.49 Magic Square", "5.4.49 Magic Square\5.4.49 Magic Square.vcxproj", "{596419FE-0A20-47A6-A414-D236A5013215}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.5.9 Merge files", "5.5.9 Merge files\5.5.9 Merge files.vcxproj", "{DF0E68E9-85C2-4DB1-A214-31F98768E03B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -333,6 +335,14 @@ Global
 		{596419FE-0A20-47A6-A414-D236A5013215}.Release|x64.Build.0 = Release|x64
 		{596419FE-0A20-47A6-A414-D236A5013215}.Release|x86.ActiveCfg = Release|Win32
 		{596419FE-0A20-47A6-A414-D236A5013215}.Release|x86.Build.0 = Release|Win32
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B}.Debug|x64.ActiveCfg = Debug|x64
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B}.Debug|x64.Build.0 = Debug|x64
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B}.Debug|x86.ActiveCfg = Debug|Win32
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B}.Debug|x86.Build.0 = Debug|Win32
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B}.Release|x64.ActiveCfg = Release|x64
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B}.Release|x64.Build.0 = Release|x64
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B}.Release|x86.ActiveCfg = Release|Win32
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -369,6 +379,7 @@ Global
 		{24D34D67-981B-4C7D-9239-5E15E0F1909C} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
 		{6B1FDF9B-504E-409C-B170-8407F42F29E3} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
 		{596419FE-0A20-47A6-A414-D236A5013215} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
+		{DF0E68E9-85C2-4DB1-A214-31F98768E03B} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
