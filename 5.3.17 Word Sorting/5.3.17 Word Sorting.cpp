@@ -77,9 +77,9 @@ std::vector<std::string> QuickSort(std::vector<std::string> data)
 
 /// <summary>
 /// Сверяет слова с друг другом и выявляет какое из них по порядку раньше
-/// -1 = слово A раньше
-///  0 = слова одинаковы
-///  1 = слово B раньше
+/// AisEarlier = слово A раньше
+/// Same = слова одинаковы
+/// BisEarlier = слово B раньше
 /// </summary>
 /// <param name="A">Строка A</param>
 /// <param name="B">Строка B</param>
