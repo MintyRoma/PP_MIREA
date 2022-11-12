@@ -4,9 +4,19 @@ int balls;
 
 void NextItteration(int stop);
 bool Check();
-bool debug = false;
+void Construct(int leftHand,int rightHand);
+void mainConstruct(int size);
+void ConstructRight(int size);
+void CheckV2();
+void PrintVector();
+
+bool debug = true;
+int inService = 0;
 std::vector<int> available;
 std::vector<int> constructed;
+
+std::vector<int> Left;
+std::vector<int> Right;
 int combos = 0;
 int main()
 {
@@ -28,22 +38,32 @@ int main()
 			std::cin >> ask;
 		}
 		if (ask == 1)debug = true;
+		else debug = false;
 	}
-	NextItteration(balls);
+	for (int i = 0; i < balls; i++)
+	{
+		inService = available[i];
+		available.erase(available.begin() + i);
+		NextItteration(balls - 1);
+		available.insert(available.begin() + i, inService);
+	}
 	std::cout << "Комбинаций: " <<combos;
 }
 
+void PrintVector()
+{
+	std::cout << "[";
+	for (int i = 0; i < inService-1;i++) std::cout << constructed[i] << " ";
+	std::cout << "] " << inService << "[ ";
+	for (int i = inService-1; i <= constructed.size()-1; i++) std::cout << constructed[i] << " ";
+	std::cout << "]"<<std::endl;
+}
 void NextItteration(int stop)
 {
 	if (stop==0)
 	{
 		bool status = Check();
-		if (debug) {
-			if (status) std::cout << "\u001b[33m";
-			for (int c : constructed) std::cout << c<<" ";
-			if (status) std::cout << "\u001b[0m";
-			std::cout<<std::endl;
-		}
+		if (debug && status) PrintVector();
 		return;
 	}
 	for (int i = 0; i < stop; i++)
@@ -59,13 +79,7 @@ void NextItteration(int stop)
 
 bool Check()
 {
-	for (int i = 0; i < constructed.size(); i++)
-	{
-		if (i + 1 == constructed[i])
-		{
-			combos++;
-			return true;
-		}
-	}
-	return false;
+	for (int i = 0; i < inService-1; i++) if (i + 1 == constructed[i]) return false;
+	combos++;
+	return true;
 }
