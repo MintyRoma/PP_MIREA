@@ -5,7 +5,7 @@ int balls;
 
 void NextItteration(int stop);
 bool Check();
-bool debug = false;
+bool debug = true;
 std::vector<int> available;
 std::vector<int> constructed;
 int combos = 0;
@@ -29,6 +29,7 @@ int main()
 			std::cin >> ask;
 		}
 		if (ask == 1)debug = true;
+		else debug = false;
 	}
 	std::chrono::system_clock::time_point AlgoStart = std::chrono::system_clock::now();
 	NextItteration(balls);
