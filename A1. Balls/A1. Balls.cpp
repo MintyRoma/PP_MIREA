@@ -4,10 +4,6 @@ int balls;
 
 void NextItteration(int stop);
 bool Check();
-void Construct(int leftHand,int rightHand);
-void mainConstruct(int size);
-void ConstructRight(int size);
-void CheckV2();
 void PrintVector();
 
 bool debug = true;
