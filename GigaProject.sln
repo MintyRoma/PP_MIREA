@@ -87,6 +87,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spinners", "Spinners", "{F3
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S1.SpinnerCost", "S1.SpinnerCost\S1.SpinnerCost.vcxproj", "{618C0C76-B8B9-41E1-9B7C-82A8149C3321}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S2. Available Spinners", "S2. Available Spinners\S2. Available Spinners.vcxproj", "{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -367,6 +369,14 @@ Global
 		{618C0C76-B8B9-41E1-9B7C-82A8149C3321}.Release|x64.Build.0 = Release|x64
 		{618C0C76-B8B9-41E1-9B7C-82A8149C3321}.Release|x86.ActiveCfg = Release|Win32
 		{618C0C76-B8B9-41E1-9B7C-82A8149C3321}.Release|x86.Build.0 = Release|Win32
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}.Debug|x64.ActiveCfg = Debug|x64
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}.Debug|x64.Build.0 = Debug|x64
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}.Debug|x86.ActiveCfg = Debug|Win32
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}.Debug|x86.Build.0 = Debug|Win32
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}.Release|x64.ActiveCfg = Release|x64
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}.Release|x64.Build.0 = Release|x64
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}.Release|x86.ActiveCfg = Release|Win32
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -406,6 +416,7 @@ Global
 		{DF0E68E9-85C2-4DB1-A214-31F98768E03B} = {0BE99E00-B6AC-442C-9F2C-A482382E04BD}
 		{D304CA93-64DA-4F07-A269-D39C7ED6DBA6} = {9164C8BC-185B-4DA0-8380-BF51EC241004}
 		{618C0C76-B8B9-41E1-9B7C-82A8149C3321} = {F33C3EE1-5261-47D2-A803-2EA6BD48BCE5}
+		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402} = {F33C3EE1-5261-47D2-A803-2EA6BD48BCE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
