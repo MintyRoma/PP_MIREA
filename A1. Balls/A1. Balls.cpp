@@ -4,6 +4,7 @@ int balls;
 
 void NextItteration(int stop);
 bool Check();
+bool debug = false;
 std::vector<int> available;
 std::vector<int> constructed;
 int combos = 0;
@@ -14,7 +15,20 @@ int main()
 	std::cin >> balls;
 	
 	for (int i = 1; i <= balls; i++)available.push_back(i);
-
+	if (balls > 7)
+	{
+		int ask = -1;
+		while (ask != 0 && ask != 1)
+		{
+			std::cout << "\u001b[31mКоличество шариков очень большое, рекомендуется отключить дебаг вывод.\u001b[0m\n" <<
+				"\u001b[31mРассчет последовательности может занять до нескольких минут!\u001b[0m\n"<<
+				"Для отключения вывода напишите 0\n"<<
+				"Чтобы оставить вывод комбинаций напишите 1\n"<<
+				"Ваш выбор: ";
+			std::cin >> ask;
+		}
+		if (ask == 1)debug = true;
+	}
 	NextItteration(balls);
 	std::cout << "Комбинаций: " <<combos;
 }
@@ -24,10 +38,12 @@ void NextItteration(int stop)
 	if (stop==0)
 	{
 		bool status = Check();
-		if (status) std::cout << "\u001b[33m";
-		for (int c : constructed) std::cout << c;
-		if (status) std::cout << "\u001b[0m";
-		std::cout<<std::endl;
+		if (debug) {
+			if (status) std::cout << "\u001b[33m";
+			for (int c : constructed) std::cout << c<<" ";
+			if (status) std::cout << "\u001b[0m";
+			std::cout<<std::endl;
+		}
 		return;
 	}
 	for (int i = 0; i < stop; i++)
