@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
+#include <chrono>
 int balls;
 
 void NextItteration(int stop);
@@ -29,8 +30,11 @@ int main()
 		}
 		if (ask == 1)debug = true;
 	}
+	std::chrono::system_clock::time_point AlgoStart = std::chrono::system_clock::now();
 	NextItteration(balls);
-	std::cout << "Комбинаций: " <<combos;
+	std::chrono::duration<double> AlgoTime = std::chrono::system_clock::now() - AlgoStart;
+	std::cout << "Комбинаций: " <<combos<<std::endl;
+	std::cout<<"Затрачено времени: "<< AlgoTime.count() << " secs." << std::endl;
 }
 
 void NextItteration(int stop)
