@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S2. Available Spinners", "S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S3. Not about spinners", "S3. Not about spinners\S3. Not about spinners.vcxproj", "{8C7927D6-E8AC-4C3D-BEE0-AE6DE22C31C9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S4. Plackart", "S4. Plackart\S4. Plackart.vcxproj", "{E050D8A7-B862-4271-AB65-6855408CE690}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -387,6 +389,14 @@ Global
 		{8C7927D6-E8AC-4C3D-BEE0-AE6DE22C31C9}.Release|x64.Build.0 = Release|x64
 		{8C7927D6-E8AC-4C3D-BEE0-AE6DE22C31C9}.Release|x86.ActiveCfg = Release|Win32
 		{8C7927D6-E8AC-4C3D-BEE0-AE6DE22C31C9}.Release|x86.Build.0 = Release|Win32
+		{E050D8A7-B862-4271-AB65-6855408CE690}.Debug|x64.ActiveCfg = Debug|x64
+		{E050D8A7-B862-4271-AB65-6855408CE690}.Debug|x64.Build.0 = Debug|x64
+		{E050D8A7-B862-4271-AB65-6855408CE690}.Debug|x86.ActiveCfg = Debug|Win32
+		{E050D8A7-B862-4271-AB65-6855408CE690}.Debug|x86.Build.0 = Debug|Win32
+		{E050D8A7-B862-4271-AB65-6855408CE690}.Release|x64.ActiveCfg = Release|x64
+		{E050D8A7-B862-4271-AB65-6855408CE690}.Release|x64.Build.0 = Release|x64
+		{E050D8A7-B862-4271-AB65-6855408CE690}.Release|x86.ActiveCfg = Release|Win32
+		{E050D8A7-B862-4271-AB65-6855408CE690}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -428,6 +438,7 @@ Global
 		{618C0C76-B8B9-41E1-9B7C-82A8149C3321} = {F33C3EE1-5261-47D2-A803-2EA6BD48BCE5}
 		{271ACAA0-A74C-45BE-A9D2-09FBF75FC402} = {F33C3EE1-5261-47D2-A803-2EA6BD48BCE5}
 		{8C7927D6-E8AC-4C3D-BEE0-AE6DE22C31C9} = {F33C3EE1-5261-47D2-A803-2EA6BD48BCE5}
+		{E050D8A7-B862-4271-AB65-6855408CE690} = {F33C3EE1-5261-47D2-A803-2EA6BD48BCE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
