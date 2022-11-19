@@ -73,6 +73,7 @@ int main()
 		if (empty)
 		{
 			runt++;
+			if (runt > res) res = runt;
 		}
 		else
 		{

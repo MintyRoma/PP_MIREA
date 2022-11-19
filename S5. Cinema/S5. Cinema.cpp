@@ -4,7 +4,7 @@ int main()
 {
 	setlocale(0, "");
 	std::cout << "Введите количество сидений: ";
-	int seats;
+	int seats/*=22*/;
 	std::cin >> seats;
 	std::cout << "Введите количество школьников: ";
 	int schoolars;
