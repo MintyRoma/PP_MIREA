@@ -95,6 +95,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S4. Plackart", "S4. Plackar
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S5. Cinema", "S5. Cinema\S5. Cinema.vcxproj", "{B354F6E7-4F23-4EEC-ABBC-3386CE960A11}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Not Nier Automata", "Not Nier Automata", "{07EC70FB-E64E-4F18-AF0C-B392D948DD3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

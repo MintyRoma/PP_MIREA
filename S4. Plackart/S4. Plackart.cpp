@@ -77,7 +77,6 @@ int main()
 		}
 		else
 		{
-			if (runt > res) res = runt;
 			runt = 0;
 		}
 	}
