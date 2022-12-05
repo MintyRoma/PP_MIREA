@@ -23,4 +23,9 @@
     <None Include="work.dat" />
     <None Include="work.out" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AU100. Live Bacterium.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
