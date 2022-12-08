@@ -16,6 +16,8 @@ std::array<std::array<int, 21>, 21> Simulate(std::array<std::array<int, 21>, 21>
 
 void PrintExport(std::array<std::array<int, 21>, 21> dish, int gen);
 
+std::string PrepareExport(std::array<std::array<int, 21>, 21> dish, int gen);
+
 void FileExport(std::array<std::array<int, 21>, 21> dish, int gen);
 
 void AskToFill();
@@ -25,3 +27,7 @@ void ShowImported(std::vector<char> imported);
 void CreateStatistics(std::array<std::array<int, 21>, 21> dish);
 
 bool AskSpreading();
+
+bool AskNewUI();
+
+void DrawSimulation(std::array<std::array<int, 21>, 21> dish);

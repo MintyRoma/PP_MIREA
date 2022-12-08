@@ -6,27 +6,48 @@
 #include <array>
 #include <vector>
 #include "AU100. Live Bacterium.h"
+#include "Windows.h"
 
 bool spreadMode = false;
+bool newUIMode = false;
+HWND console = GetConsoleWindow();
+
 
 int main()
 {
 	setlocale(0, "");
+	std::ios::sync_with_stdio(false);
+
 	std::vector<char> charsetLibrary = GetCharsetLibrary();
 	std::array<std::array<int, 21>, 21> now = GetPetriDish(charsetLibrary);
 	std::array<std::array<int, 21>, 21> future;
 	
 	ShowImported(charsetLibrary);
-
+	newUIMode = AskNewUI();
 	spreadMode = AskSpreading();
 	int generations = GetGenerations();
+
+
 
 	for (int runtime = 0; runtime < generations; runtime++)
 	{
 		future = Simulate(now);
-		PrintExport(future, runtime);
+		if (!newUIMode)
+		{
+			system("CLS");
+			std::cout<<PrepareExport(future, runtime);
+			CreateStatistics(future);
+			Sleep(250);
+		}
+		else
+		{
+			Sleep(100);
+			system("CLS");
+			CreateStatistics(future);
+			std::cout << "Текущая иттерация: " << runtime;
+			DrawSimulation(future);
+		}
 		FileExport(future,runtime);
-		CreateStatistics(future);
 		now = future;
 	}
 }
@@ -282,6 +303,22 @@ void PrintExport(std::array<std::array<int, 21>, 21> dish, int gen)
 	}
 }
 
+std::string PrepareExport(std::array<std::array<int, 21>, 21> dish, int gen)
+{
+	std::string data;
+	data = "Текущее поколение: " + std::to_string(gen) +"\n";
+	for (int x = 0; x < 21; x++)
+	{
+		for (int y = 0; y < 21; y++)
+		{
+			if (dish[x][y] > 0) data+= "\u001b[33m" + std::to_string(dish[x][y])+ "\u001b[0m" + '\t';
+			else data+= std::to_string(dish[x][y])+ '\t';
+		}
+		data+= '\n';
+	}
+	return data;
+}
+
 void FileExport(std::array<std::array<int, 21>, 21> dish, int gen)
 {
 	std::fstream exporter("work.out", std::ios::app);
@@ -364,4 +401,33 @@ bool AskSpreading()
 	}
 	if (answer) return true;
 	return false;
+}
+
+bool AskNewUI()
+{
+	int answer = -1;
+	while (answer != 0 && answer != 1)
+	{
+		std::cout << "Использовать новый UI? [0/1] ";
+		std::cin >> answer;
+	}
+	if (answer) return true;
+	return false;
+}
+
+void DrawSimulation(std::array<std::array<int, 21>, 21> dish)
+{
+	HDC device_context = GetDC(console);
+	for (int x = 0; x < 21; x++)
+	{
+		for (int y = 0; y < 21; y++)
+		{
+			HPEN pen = CreatePen(PS_SOLID, 10, RGB(20*dish[x][y], 20 * dish[x][y], 20 * dish[x][y]));
+			SelectObject(device_context, pen);
+			Rectangle(device_context, y*20, 50 + (x*20), y*20+10, 50+(x*20+10));
+			DeleteObject(pen);
+			
+		}
+	}
+	ReleaseDC(console, device_context);
 }
