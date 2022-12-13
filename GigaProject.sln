@@ -99,6 +99,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Not Nier Automata", "Not Ni
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AU100. Live Bacterium", "AU100. Live Bacterium\AU100. Live Bacterium.vcxproj", "{D503E534-82C8-4DBD-864E-261D7623325E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BullsAndCows", "BullsAndCows\BullsAndCows.vcxproj", "{4F08D889-6E38-4747-9F4D-71B98FED65FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -419,6 +421,14 @@ Global
 		{D503E534-82C8-4DBD-864E-261D7623325E}.Release|x64.Build.0 = Release|x64
 		{D503E534-82C8-4DBD-864E-261D7623325E}.Release|x86.ActiveCfg = Release|Win32
 		{D503E534-82C8-4DBD-864E-261D7623325E}.Release|x86.Build.0 = Release|Win32
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE}.Debug|x64.ActiveCfg = Debug|x64
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE}.Debug|x64.Build.0 = Debug|x64
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE}.Debug|x86.ActiveCfg = Debug|Win32
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE}.Debug|x86.Build.0 = Debug|Win32
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE}.Release|x64.ActiveCfg = Release|x64
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE}.Release|x64.Build.0 = Release|x64
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE}.Release|x86.ActiveCfg = Release|Win32
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -463,6 +473,7 @@ Global
 		{E050D8A7-B862-4271-AB65-6855408CE690} = {F33C3EE1-5261-47D2-A803-2EA6BD48BCE5}
 		{B354F6E7-4F23-4EEC-ABBC-3386CE960A11} = {F33C3EE1-5261-47D2-A803-2EA6BD48BCE5}
 		{D503E534-82C8-4DBD-864E-261D7623325E} = {07EC70FB-E64E-4F18-AF0C-B392D948DD3C}
+		{4F08D889-6E38-4747-9F4D-71B98FED65FE} = {1F33DC14-5376-4284-BED6-60865E828930}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F828F006-AE20-4910-8B58-B21443FC8C2A}
