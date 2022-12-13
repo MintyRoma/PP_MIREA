@@ -44,7 +44,7 @@ std::vector<int> ReadInput(int step)
 		std::cout << step << ": Введите значение:\n";
 		std::string buf;
 		std::cin >> buf;
-		if (buf.length() != 4) break;
+		if (buf.length() != 4) continue;
 		for (int i = 0;i<4;i++)
 		{
 			if (isdigit(buf[i]))
