@@ -1,7 +1,5 @@
-﻿#include <iostream>
+﻿#include "4.7 PseudoRandom Number Generator.h"
 
-int Gen1(int previous);
-int Gen2(int previous);
 
 int main()
 {

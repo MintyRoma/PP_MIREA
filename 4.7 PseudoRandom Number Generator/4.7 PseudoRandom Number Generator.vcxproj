@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="4.7 PseudoRandom Number Generator.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="4.7 PseudoRandom Number Generator.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

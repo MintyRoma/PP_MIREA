@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="4.5 Sinusoida.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="4.5 Sinusoida.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

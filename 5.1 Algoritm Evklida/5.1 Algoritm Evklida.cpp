@@ -1,8 +1,5 @@
-﻿#include <iostream>
-#include <cmath>
+﻿#include "5.1 Algoritm Evklida.h"
 
-int EvklidMinus(int A, int B);
-int EvklidMod(int A, int B);
 
 int main()
 {

@@ -1,10 +1,6 @@
-﻿#include <iostream>
-#include <string>
-#include <random>
-#include <array>
+﻿#include "3.5 Sorting.h"
 #define amount 100
 
-std::string MergeSort(std::string arr);
 
 int main()
 {

@@ -1,7 +1,5 @@
-﻿#include <iostream>
-#include <cmath>
+﻿#include "4.9 Sistemy schisleniya.h"
 
-int ConvertToDec(char c, int NS);
 
 int main()
 {

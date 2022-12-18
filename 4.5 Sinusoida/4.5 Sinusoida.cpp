@@ -1,14 +1,5 @@
-﻿#define _USE_MATH_DEFINES
-#include <iostream>
-#include <cmath>
+﻿#include "4.5 Sinusoida.h"
 
-#define point '@'
-#define empty ' '
-#define XO '-'
-#define YO '|'
-#define center '+'
-
-void DrawSin(double scale);
 
 int main()
 {

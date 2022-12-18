@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="4.6 Automatny raspoznavatel.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="4.6 Automatny raspoznavatel.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -132,6 +132,9 @@
   <ItemGroup>
     <Text Include="Task.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="5.3.17 Word Sorting.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,7 +1,5 @@
-﻿#include <iostream>
-#include <string>
+﻿#include "4.6 Automatny raspoznavatel.h"
 
-int DefineNumber(char num);
 
 int main()
 {

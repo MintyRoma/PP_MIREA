@@ -1,12 +1,6 @@
-﻿#define _USE_MATH_DEFINES
-#include <iostream>
-#include <cmath>
+﻿#include "4.3 Geometrical Shapes.h"
+#define _USE_MATH_DEFINES
 
-
-//Functions
-void CircleWizard();
-void TriangleWizard();
-void RectangleWizard();
 
 
 int main()

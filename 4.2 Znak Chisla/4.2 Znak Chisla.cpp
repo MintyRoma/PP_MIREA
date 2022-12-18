@@ -1,8 +1,5 @@
-﻿#include <iostream>
-#include <fstream>
-#include <string>
+﻿#include "4.2 Znak Chisla.h"
 
-int DefineSymbol(double num);
 
 int main()
 {
